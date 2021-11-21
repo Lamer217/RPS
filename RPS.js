@@ -16,7 +16,6 @@ const checkUserInput = userInputFormatted => {
   }
 };
 // After string entry generate computer's choice
-
 const computerOutput = () => {
   // Random number 1-3 for computers choice
   const num = Math.floor(Math.random() * 3) + 1;
@@ -57,7 +56,7 @@ const draw =
 // The game function
 const game = (userInputFormatted, computerOutput, checkUserInput) => {
   if (checkUserInput(userInputFormatted)) {
-    return compare(userInputFormatted, computerOutput);
+    return compare(userInputFormatted, computerOutput());
   }
 };
 // Output result
